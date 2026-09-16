@@ -1,0 +1,89 @@
+Código HTML. Guárdalo como index.html:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <title>Prueba de GitHub</title>
+</head>
+<body>
+ <h1>Mi primera prueba con GitHub</h1>
+ <p>Este archivo fue creado para practicar Git y 
+GitHub.</p>
+ <h2>Información del estudiante</h2>
+ <p>Nombre: __________________________</p>
+ <p>Curso: Ingeniería en Sistemas</p>
+ <button>Haz clic aquí</button>
+</body>
+</html>
+1. Crear la carpeta llamada: PruebaGitHub
+Dentro de ella guardar el archivo: index.html
+2. Crear el repositorio local Abrir la terminal dentro 
+de la carpeta y ejecutar:
+git init
+Verificar: git status
+3. Agregar el archivo
+git add index.html
+Crear el primer commit:
+git commit -m "Primer commit - página HTML"
+4. Crear el repositorio en GitHub
+Ingresar a GitHub y crear un repositorio llamado:
+PruebaGitHub_2026
+Para esta práctica, pueden crear el repositorio sin 
+README, sin .gitignore y sin licencia, para evitar
+conflictos al conectarlo con el repositorio local.
+5. Conectar Git con GitHub
+GitHub proporcionará una dirección similar a:
+https://github.com/USUARIO/PruebaGitHub.git
+En la terminal:
+git remote add origin 
+https://github.com/USUARIO/PruebaGitHub.git
+Verificar la conexión:
+git remote -v
+6. Subir el proyecto a GitHub
+git branch -M main
+Luego:
+git push -u origin main
+Ingresa nuevamente a GitHub y comprobar que 
+aparece:
+PruebaGitHub
+└── index.html
+└── prueba.html
+7. Realizar una modificación
+Modificar:
+<h1>Mi primera prueba con GitHub</h1>
+por:
+<h1>Mi primera página publicada con GitHub</h1>
+Agregar una nueva línea:
+<p>Estoy aprendiendo control de versiones.</p>
+Después ejecutar:
+git status
+git add index.html
+git commit -m "Actualización de la página"
+Y finalmente:
+git push
+8. Comprobación final: se debe actualizar la página 
+del repositorio en GitHub y demostrar que la 
+modificación aparece en index.html.
+Flujo que se evalúa:
+Archivo HTML
+ ↓
+ git init
+ ↓
+ git add
+ ↓
+ git commit
+ ↓
+Repositorio GitHub
+ ↓
+git remote add origin
+ ↓
+ git push
+ ↓
+Modificar archivo
+ ↓
+git add + commit
+ ↓
+ git push
+ ↓
+Verificar en GitHub
+Evidencias: captura de git status, captura de git log --oneline, captura del repositorio en GitHub y captura donde
